@@ -3,8 +3,6 @@
 import React from 'react';
 import superagent from 'superagent';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-
 import SearchForm from './reddit/searchform.js';
 import SearchResultList from './reddit/searchresultlist.js';
 
