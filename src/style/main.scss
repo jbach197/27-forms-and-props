@@ -1,12 +1,28 @@
+body {
+  background: linear-gradient(to right, #B5F5DD,   #28F7AB);
+}
 
+h1 {
+  color: #11165E;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+#searchFormBoard, #searchFormLimit {
+  font-size: 1.25em;
+  margin: .25em;
+  outline: solid 1px darkgrey;
+}
 .error #searchFormBoard {
   outline: solid 1px red;
 }
-#logo {
-  font-size: 4em;
-  color: red;
-
-  &:hover {
-    color: yellow;
-  }
+input[type="submit"] {
+  font-size: 1.25em;
+  outline: solid 1px darkgrey;
+}
+li {
+  cursor: pointer;
 }
