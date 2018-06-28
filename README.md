@@ -1,67 +1,31 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 27: Reddit Search Engine
 ===
+## Author
+Jennifer Bach
 
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas  
-  
-## Learning Objectives  
-* Students will learn to test react components using jest and enzyme 
-* Students will learn to manage controlled inputs
-* Students will learn to pass data from parent to child through props
-
-## Requirements  
-#### Configuration  
-Your lab directory must include  
-* **README.md** -- with documentation about your lab
-* **.gitignore** -- with a robust gitignore
-* **.eslintrc.json** -- with the class .eslintrc.json file
-* **.eslintignore** -- with the class .eslintignore
-* **.babelrc** -- with all dependencies and dev-dependencies 
-* **package.json** -- with all dependencies and dev-dependencies 
-* **yarn.lock** -- with the yarn lockfile
-* **webpack.config.js** -- with webpack config
-* **src/** -- containing the frontend code
-* **src/main.js** -- containing the entire app
-* **src/style** -- containing your sass
-* **src/style/main.scss** -- containing the frontend code
- 
-#### Feature Tasks 
-Create the following components and structure them according to the following diagram 
-```
-App
-  SearchForm
-  SearchResultList
-``` 
-###### App Component
-* should contain all of the **application state** 
-* should contain methods for modifying the application state
-* the state should have a topics array for holding the results of the search
-
-###### SearchForm Component
-* should contain a text input for the user to supply a reddit board to look up
-* should contain a number input for the user to limit the number of results to return 
-  * the number must be more than 0 and less than 100
-  * `onSubmit` the form should make a request to reddit 
-  * it should make a get request to `http://reddit.com/r/${searchFormBoard}.json?limit=${searchFormLimit}`
+## Requirements
+* Contains a text input for the user to supply a reddit board to look up
+* Contain a number input for the user to limit the number of results to return, the number should be between 0 and 100
+* `onSubmit` the form should make a request to reddit 
   * on success it should pass the results to the application state
   * on failure it should add a class to the form called error and turn the form's inputs borders red
-
-###### SearchResultList Component
 * Should inherit all search results through props
-* This component does not need to have its own state
-* If there are topics in the application state it should display an unordered list 
 * Each list item in the unordered list should contain the following
   * an anchor tag with a href to the topic.url 
-    * inside the anchor a heading tag with the topic.title 
-    * inside the anchor a p tag with the number of topic.ups 
+    * inside the anchor a heading tag with the title 
+    * inside the anchor a p tag with the number of likes
 
-#### Test
-* no testing today
+## Languiages and Frameworks Used
+Javascript (es6), react, html, scss
 
-#### Documentation  
-Write a description of the project in your README.md
+## Instructions for Use
+* Step 1. Fork and Clone the Repository.
+* Step 2. Run npm i to install dependencies
+* Step 3. Run npm watch to view the app
+* Step 4. You should now be able to visit: `http://localhost:8080/` to view the application
+* Step 5. Type in a Subreddit topic, `ie: dogs` and Limit `ie: 5` and click the search button to view results
+
+## Credits
+* Worked with Justin Morris
+* TAs, Code Fellows staff and google
+

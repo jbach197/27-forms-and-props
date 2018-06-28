@@ -40,7 +40,6 @@ export default class App extends React.Component {
   render() {
     return (
       <main>
-        <div id="logo"><FontAwesomeIcon icon={['fab', 'reddit']} /></div>
         <h1>Reddit Search</h1>
         <SearchForm searchClass={this.state.hasError ? 'error' : 'success'} redditSearch={this.handleSubmit} />
         <ul>
