@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch":  "webpack-dev-server --config webpack.dev.js",
+    "watch": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
@@ -18,9 +18,18 @@
     "url": "https://github.com/jbach197/27-forms-and-props/issues"
   },
   "homepage": "https://github.com/jbach197/27-forms-and-props#readme",
-  "dependencies": {
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "dotenv": "^6.0.0",
+    "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
